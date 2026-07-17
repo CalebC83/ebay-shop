@@ -18,10 +18,11 @@
   .hlcard.skippy:hover{z-index:60}
   .hltag .hint{font-style:normal;font-weight:500;color:var(--sk);opacity:.85;margin-left:4px}
   /* Opens DOWNWARD: the Skippy card sits near the top of the page, so an upward
-     tooltip would open off-screen. Capped + scrollable — the rationale is long, and
-     the tooltip is a descendant of its trigger so moving into it keeps :hover alive. */
+     tooltip would open off-screen. A hover tooltip must never scroll — keep
+     skippys_pick.why to ~3 short lines (see SKILL.md). max-height is a backstop
+     against an over-written rationale, not a licence to write one. */
   .sktip{display:none;position:absolute;top:calc(100% + 12px);left:0;width:min(460px,88vw);
-    max-height:min(58vh,430px);overflow-y:auto;overscroll-behavior:contain;
+    max-height:min(52vh,340px);overflow-y:auto;overscroll-behavior:contain;
     background:#12242c;color:#eef4f7;padding:13px 15px;border-radius:12px;font-size:12.5px;
     line-height:1.55;font-weight:400;white-space:pre-line;box-shadow:0 14px 34px rgba(0,0,0,.34);z-index:30}
   .sktip::after{content:"";position:absolute;bottom:100%;left:28px;border:7px solid transparent;border-bottom-color:#12242c}
@@ -74,17 +75,11 @@
       <span class="hltag">🤖 Skippy's Pick <em class="hint">hover for why</em></span>
       <span class="hlprice">$405.99</span>
       <span class="hltitle">15.6&quot; — Hp Zbook Firefly 15 G8 15.6&quot; i7-1185G7 32GB 512GB SSD W11P Low</span>
-      <span class="sktip">Everything else on this page asks you to give something up. This one doesn't.
+      <span class="sktip">512GB where the other 15.6&quot; picks give 256 — node_modules eats 256. Newest CPU here (11th gen). 3.7 lbs.
 
-vs the 14&quot; Latitude 3410 ($259.95): the 3410 is the better deal and I'd take it if price were the only axis — but you said 14&quot; is tiny, and you're right for this workload. Code, browser and a terminal on a 14&quot; panel is three windows fighting over a placemat.
+14&quot; is cramped for code + browser. 17&quot; is +$73 and six pounds of CAD workstation.
 
-vs the 17&quot; Precision 7750 ($479): the 17 costs $73 more, weighs six pounds, and hauls a 180W brick to school in a kid's backpack. It's a CAD workstation. You're running VS Code and Node.
-
-vs the other 15.6&quot; options ($352-362): both give you 256GB. node_modules and Docker images eat disk far faster than schoolwork does — 512GB is the spec that actually bites, and this doubles them for ~$45.
-
-The battery flag is why it's here, not despite it. Every other machine ships a 4-6 year old cell nobody mentions. This seller disclosed a bad one, a verified $29-49 SS03XL swaps in through the bottom cover with basic tools, and for $50 it ends up with the NEWEST battery on this page. The only honest listing in the set gets punished by the sticker price and rewarded by the real one.
-
-Plus: newest silicon we found (Tiger Lake, 2020), Excellent-Refurbished (best grade here), 3.7 lbs, and Claude runs on Anthropic's servers so none of this needs to be a monster — it needs RAM, disk and screen. This has all three.
+The battery flag is why it wins: disclosed, $50 to swap, ends up the newest cell on this page. Everyone else hides a 5-year-old one.
 </span>
     </a>
     <a class="hlcard cheapest" href="https://www.ebay.com/itm/198198885977" target="_blank" rel="noopener">
@@ -163,17 +158,11 @@ Plus: newest silicon we found (Tiger Lake, 2020), Excellent-Refurbished (best gr
     <div class="ph"><img loading="lazy" src="https://i.ebayimg.com/images/g/ViYAAeSwwbZqWUDL/s-l500.webp" alt="">
       <span class="cond used">Excellent - Refurbished</span>
     </div>
-    <div class="badges"><span class="badge sk">🤖 Skippy's Pick<span class="sktip badge-tip">Everything else on this page asks you to give something up. This one doesn't.
+    <div class="badges"><span class="badge sk">🤖 Skippy's Pick<span class="sktip badge-tip">512GB where the other 15.6&quot; picks give 256 — node_modules eats 256. Newest CPU here (11th gen). 3.7 lbs.
 
-vs the 14&quot; Latitude 3410 ($259.95): the 3410 is the better deal and I'd take it if price were the only axis — but you said 14&quot; is tiny, and you're right for this workload. Code, browser and a terminal on a 14&quot; panel is three windows fighting over a placemat.
+14&quot; is cramped for code + browser. 17&quot; is +$73 and six pounds of CAD workstation.
 
-vs the 17&quot; Precision 7750 ($479): the 17 costs $73 more, weighs six pounds, and hauls a 180W brick to school in a kid's backpack. It's a CAD workstation. You're running VS Code and Node.
-
-vs the other 15.6&quot; options ($352-362): both give you 256GB. node_modules and Docker images eat disk far faster than schoolwork does — 512GB is the spec that actually bites, and this doubles them for ~$45.
-
-The battery flag is why it's here, not despite it. Every other machine ships a 4-6 year old cell nobody mentions. This seller disclosed a bad one, a verified $29-49 SS03XL swaps in through the bottom cover with basic tools, and for $50 it ends up with the NEWEST battery on this page. The only honest listing in the set gets punished by the sticker price and rewarded by the real one.
-
-Plus: newest silicon we found (Tiger Lake, 2020), Excellent-Refurbished (best grade here), 3.7 lbs, and Claude runs on Anthropic's servers so none of this needs to be a monster — it needs RAM, disk and screen. This has all three.
+The battery flag is why it wins: disclosed, $50 to swap, ends up the newest cell on this page. Everyone else hides a 5-year-old one.
 </span></span></div>
     <div class="body">
       <div class="price">$405.99 <small>out the door</small></div>
@@ -286,6 +275,6 @@ Plus: newest silicon we found (Tiger Lake, 2020), Excellent-Refurbished (best gr
   </div>
   <footer>
     Prices/specs are the seller's claim at generation time and move (auctions especially). Read the listing before buying.<br>
-    Generated 2026-07-17 13:46 UTC · shop-ebay skill · not affiliated with eBay.
+    Generated 2026-07-17 13:49 UTC · shop-ebay skill · not affiliated with eBay.
   </footer>
 </div></body></html>
