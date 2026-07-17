@@ -12,9 +12,10 @@
   header.hero h1{margin:0 0 6px;font-size:24px}
   header.hero p{margin:3px 0;font-size:14px;opacity:.95}
   .highlights{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin:14px 0 4px}
-  .hlcard{display:flex;flex-direction:column;gap:2px;background:#fff;border-radius:14px;padding:12px 14px;text-decoration:none;color:inherit;border-left:5px solid var(--g);box-shadow:0 4px 14px rgba(20,40,50,.07)}
+  .hlcard{position:relative;z-index:2;display:flex;flex-direction:column;gap:2px;background:#fff;border-radius:14px;padding:12px 14px;text-decoration:none;color:inherit;border-left:5px solid var(--g);box-shadow:0 4px 14px rgba(20,40,50,.07)}
   .hlcard.match{border-left-color:var(--a)} .hlcard.value{border-left-color:var(--purple)}
   .hlcard.skippy{border-left-color:var(--sk);position:relative;overflow:visible}
+  .hlcard.skippy:hover{z-index:60}
   .hltag .hint{font-style:normal;font-weight:500;color:var(--sk);opacity:.85;margin-left:4px}
   /* Opens DOWNWARD: the Skippy card sits near the top of the page, so an upward
      tooltip would open off-screen. Capped + scrollable — the rationale is long, and
@@ -40,8 +41,8 @@
   .hlprice{font-size:21px;font-weight:800}
   .hltitle{font-size:12.5px;color:var(--muted);line-height:1.35}
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;margin-top:14px}
-  .card{position:relative;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:visible;text-decoration:none;color:inherit;box-shadow:0 4px 14px rgba(20,40,50,.06);transition:transform .12s,box-shadow .12s}
-  .card:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(20,40,50,.14)}
+  .card{position:relative;z-index:1;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:visible;text-decoration:none;color:inherit;box-shadow:0 4px 14px rgba(20,40,50,.06);transition:transform .12s,box-shadow .12s}
+  .card:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(20,40,50,.14);z-index:50}
   .ph{position:relative;height:190px;background:#dfe6ea;overflow:hidden;border-radius:15px 15px 0 0}
   .ph img{width:100%;height:100%;object-fit:contain;display:block;background:#fff}
   .badges{position:absolute;top:8px;left:8px;display:flex;flex-direction:column;gap:4px;z-index:6;align-items:flex-start}
@@ -285,6 +286,6 @@ Plus: newest silicon we found (Tiger Lake, 2020), Excellent-Refurbished (best gr
   </div>
   <footer>
     Prices/specs are the seller's claim at generation time and move (auctions especially). Read the listing before buying.<br>
-    Generated 2026-07-17 13:44 UTC · shop-ebay skill · not affiliated with eBay.
+    Generated 2026-07-17 13:46 UTC · shop-ebay skill · not affiliated with eBay.
   </footer>
 </div></body></html>
