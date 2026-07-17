@@ -4,7 +4,7 @@
 <title>Kids laptop - schoolwork + app development — eBay picks</title>
 <meta property="og:title" content="Kids laptop - schoolwork + app development — ranked eBay listings">
 <style>
-  :root{--ink:#1d2a32;--muted:#5b6b76;--line:#e6ebee;--bg:#f4f7f9;--g:#1f9d63;--a:#c8851a;--blue:#1f6f93;--purple:#6b4f9d}
+  :root{--ink:#1d2a32;--muted:#5b6b76;--line:#e6ebee;--bg:#f4f7f9;--g:#1f9d63;--a:#c8851a;--blue:#1f6f93;--purple:#6b4f9d;--sk:#c0392b}
   *{box-sizing:border-box}
   body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
   .wrap{max-width:1120px;margin:0 auto;padding:18px 16px 60px}
@@ -14,6 +14,14 @@
   .highlights{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin:14px 0 4px}
   .hlcard{display:flex;flex-direction:column;gap:2px;background:#fff;border-radius:14px;padding:12px 14px;text-decoration:none;color:inherit;border-left:5px solid var(--g);box-shadow:0 4px 14px rgba(20,40,50,.07)}
   .hlcard.match{border-left-color:var(--a)} .hlcard.value{border-left-color:var(--purple)}
+  .hlcard.skippy{border-left-color:var(--sk);position:relative;overflow:visible}
+  .hltag .hint{font-style:normal;font-weight:500;color:var(--sk);opacity:.85;margin-left:4px}
+  .sktip{display:none;position:absolute;bottom:calc(100% + 12px);left:0;width:min(460px,88vw);
+    background:#12242c;color:#eef4f7;padding:13px 15px;border-radius:12px;font-size:12.5px;
+    line-height:1.55;font-weight:400;white-space:pre-line;box-shadow:0 14px 34px rgba(0,0,0,.34);z-index:30}
+  .sktip::after{content:"";position:absolute;top:100%;left:28px;border:7px solid transparent;border-top-color:#12242c}
+  .hlcard.skippy:hover .sktip, .hlcard.skippy:focus .sktip{display:block}
+  @media (hover:none){ .sktip{display:block;position:static;width:auto;margin-top:10px;box-shadow:none} .sktip::after{display:none} }
   .hltag{font-size:12px;color:var(--muted);font-weight:600}
   .hlprice{font-size:21px;font-weight:800}
   .hltitle{font-size:12.5px;color:var(--muted);line-height:1.35}
@@ -24,7 +32,7 @@
   .ph img{width:100%;height:100%;object-fit:contain;display:block;background:#fff}
   .badges{position:absolute;top:8px;left:8px;display:flex;flex-direction:column;gap:4px}
   .badge{font-size:11px;font-weight:700;color:#fff;padding:3px 8px;border-radius:20px;background:var(--g)}
-  .badge.b{background:var(--a)} .badge.v{background:var(--purple)}
+  .badge.b{background:var(--a)} .badge.v{background:var(--purple)} .badge.sk{background:var(--sk)}
   .cond{position:absolute;bottom:8px;right:8px;font-size:11px;font-weight:700;padding:3px 8px;border-radius:8px;background:#eef;color:#334}
   .cond.new{background:#e4f7ec;color:#12703f}.cond.used{background:#fff3e0;color:#8a5a11}.cond.parts{background:#fde8e8;color:#9a2b2b}
   .body{padding:12px 13px 14px;display:flex;flex-direction:column;gap:4px}
@@ -45,6 +53,24 @@
     <p>i7 + 32GB + 256GB min. Windows 11-eligible CPUs only (8th gen+). Sizes 14 / 15.6 / 17.3 compared side by side. Claude runs in the cloud - the local load is VS Code + Node + browser, which is RAM and disk, not cores.</p>
   </header>
   <div class="highlights">
+    
+    <a class="hlcard skippy" href="https://www.ebay.com/itm/158089736689" target="_blank" rel="noopener">
+      <span class="hltag">🤖 Skippy's Pick <em class="hint">hover for why</em></span>
+      <span class="hlprice">$405.99</span>
+      <span class="hltitle">15.6&quot; — Hp Zbook Firefly 15 G8 15.6&quot; i7-1185G7 32GB 512GB SSD W11P Low</span>
+      <span class="sktip">Everything else on this page asks you to give something up. This one doesn't.
+
+vs the 14&quot; Latitude 3410 ($259.95): the 3410 is the better deal and I'd take it if price were the only axis — but you said 14&quot; is tiny, and you're right for this workload. Code, browser and a terminal on a 14&quot; panel is three windows fighting over a placemat.
+
+vs the 17&quot; Precision 7750 ($479): the 17 costs $73 more, weighs six pounds, and hauls a 180W brick to school in a kid's backpack. It's a CAD workstation. You're running VS Code and Node.
+
+vs the other 15.6&quot; options ($352-362): both give you 256GB. node_modules and Docker images eat disk far faster than schoolwork does — 512GB is the spec that actually bites, and this doubles them for ~$45.
+
+The battery flag is why it's here, not despite it. Every other machine ships a 4-6 year old cell nobody mentions. This seller disclosed a bad one, a verified $29-49 SS03XL swaps in through the bottom cover with basic tools, and for $50 it ends up with the NEWEST battery on this page. The only honest listing in the set gets punished by the sticker price and rewarded by the real one.
+
+Plus: newest silicon we found (Tiger Lake, 2020), Excellent-Refurbished (best grade here), 3.7 lbs, and Claude runs on Anthropic's servers so none of this needs to be a monster — it needs RAM, disk and screen. This has all three.
+</span>
+    </a>
     <a class="hlcard cheapest" href="https://www.ebay.com/itm/198198885977" target="_blank" rel="noopener">
       <span class="hltag">🏆 Cheapest all-in</span>
       <span class="hlprice">$259.95</span>
@@ -119,7 +145,7 @@
 
   <a class="card" href="https://www.ebay.com/itm/158089736689" target="_blank" rel="noopener">
     <div class="ph"><img loading="lazy" src="https://i.ebayimg.com/images/g/ViYAAeSwwbZqWUDL/s-l500.webp" alt="">
-      <div class="badges"></div>
+      <div class="badges"><span class="badge sk">🤖 Skippy's Pick</span></div>
       <span class="cond used">Excellent - Refurbished</span>
     </div>
     <div class="body">
@@ -233,6 +259,6 @@
   </div>
   <footer>
     Prices/specs are the seller's claim at generation time and move (auctions especially). Read the listing before buying.<br>
-    Generated 2026-07-17 13:33 UTC · shop-ebay skill · not affiliated with eBay.
+    Generated 2026-07-17 13:36 UTC · shop-ebay skill · not affiliated with eBay.
   </footer>
 </div></body></html>
