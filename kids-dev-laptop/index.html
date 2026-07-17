@@ -16,13 +16,17 @@
   .hlcard.match{border-left-color:var(--a)} .hlcard.value{border-left-color:var(--purple)}
   .hlcard.skippy{border-left-color:var(--sk);position:relative;overflow:visible}
   .hltag .hint{font-style:normal;font-weight:500;color:var(--sk);opacity:.85;margin-left:4px}
-  .sktip{display:none;position:absolute;bottom:calc(100% + 12px);left:0;width:min(460px,88vw);
+  /* Opens DOWNWARD: the Skippy card sits near the top of the page, so an upward
+     tooltip would open off-screen. Capped + scrollable — the rationale is long, and
+     the tooltip is a descendant of its trigger so moving into it keeps :hover alive. */
+  .sktip{display:none;position:absolute;top:calc(100% + 12px);left:0;width:min(460px,88vw);
+    max-height:min(58vh,430px);overflow-y:auto;overscroll-behavior:contain;
     background:#12242c;color:#eef4f7;padding:13px 15px;border-radius:12px;font-size:12.5px;
     line-height:1.55;font-weight:400;white-space:pre-line;box-shadow:0 14px 34px rgba(0,0,0,.34);z-index:30}
-  .sktip::after{content:"";position:absolute;top:100%;left:28px;border:7px solid transparent;border-top-color:#12242c}
+  .sktip::after{content:"";position:absolute;bottom:100%;left:28px;border:7px solid transparent;border-bottom-color:#12242c}
   .hlcard.skippy:hover .sktip, .hlcard.skippy:focus .sktip{display:block}
-  .badge-tip{bottom:auto;top:calc(100% + 9px);left:0;width:min(380px,76vw);font-size:12px;letter-spacing:0}
-  .badge-tip::after{top:auto;bottom:100%;left:16px;border-top-color:transparent;border-bottom-color:#12242c}
+  .badge-tip{top:calc(100% + 9px);left:0;width:min(380px,76vw);font-size:12px}
+  .badge-tip::after{left:16px}
   .badge.sk:hover .badge-tip{display:block}
   /* No hover on touch: show the rationale inline on the Skippy card, and drop the
      badge tooltip entirely (it'd blow out a 100px badge, and it's the same text). */
@@ -281,6 +285,6 @@ Plus: newest silicon we found (Tiger Lake, 2020), Excellent-Refurbished (best gr
   </div>
   <footer>
     Prices/specs are the seller's claim at generation time and move (auctions especially). Read the listing before buying.<br>
-    Generated 2026-07-17 13:42 UTC · shop-ebay skill · not affiliated with eBay.
+    Generated 2026-07-17 13:44 UTC · shop-ebay skill · not affiliated with eBay.
   </footer>
 </div></body></html>
