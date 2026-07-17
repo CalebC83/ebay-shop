@@ -21,17 +21,21 @@
     line-height:1.55;font-weight:400;white-space:pre-line;box-shadow:0 14px 34px rgba(0,0,0,.34);z-index:30}
   .sktip::after{content:"";position:absolute;top:100%;left:28px;border:7px solid transparent;border-top-color:#12242c}
   .hlcard.skippy:hover .sktip, .hlcard.skippy:focus .sktip{display:block}
+  .badge-tip{bottom:auto;top:calc(100% + 9px);left:0;width:min(380px,76vw);font-size:12px;letter-spacing:0}
+  .badge-tip::after{top:auto;bottom:100%;left:16px;border-top-color:transparent;border-bottom-color:#12242c}
+  .badge.sk:hover .badge-tip{display:block}
   @media (hover:none){ .sktip{display:block;position:static;width:auto;margin-top:10px;box-shadow:none} .sktip::after{display:none} }
   .hltag{font-size:12px;color:var(--muted);font-weight:600}
   .hlprice{font-size:21px;font-weight:800}
   .hltitle{font-size:12.5px;color:var(--muted);line-height:1.35}
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;margin-top:14px}
-  .card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;box-shadow:0 4px 14px rgba(20,40,50,.06);transition:transform .12s,box-shadow .12s}
+  .card{position:relative;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:visible;text-decoration:none;color:inherit;box-shadow:0 4px 14px rgba(20,40,50,.06);transition:transform .12s,box-shadow .12s}
   .card:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(20,40,50,.14)}
-  .ph{position:relative;height:190px;background:#dfe6ea}
+  .ph{position:relative;height:190px;background:#dfe6ea;overflow:hidden;border-radius:15px 15px 0 0}
   .ph img{width:100%;height:100%;object-fit:contain;display:block;background:#fff}
-  .badges{position:absolute;top:8px;left:8px;display:flex;flex-direction:column;gap:4px}
-  .badge{font-size:11px;font-weight:700;color:#fff;padding:3px 8px;border-radius:20px;background:var(--g)}
+  .badges{position:absolute;top:8px;left:8px;display:flex;flex-direction:column;gap:4px;z-index:6;align-items:flex-start}
+  .badge{position:relative;font-size:11px;font-weight:700;color:#fff;padding:3px 8px;border-radius:20px;background:var(--g)}
+  .badge.sk{cursor:help}
   .badge.b{background:var(--a)} .badge.v{background:var(--purple)} .badge.sk{background:var(--sk)}
   .cond{position:absolute;bottom:8px;right:8px;font-size:11px;font-weight:700;padding:3px 8px;border-radius:8px;background:#eef;color:#334}
   .cond.new{background:#e4f7ec;color:#12703f}.cond.used{background:#fff3e0;color:#8a5a11}.cond.parts{background:#fde8e8;color:#9a2b2b}
@@ -88,9 +92,9 @@ Plus: newest silicon we found (Tiger Lake, 2020), Excellent-Refurbished (best gr
     
   <a class="card" href="https://www.ebay.com/itm/198198885977" target="_blank" rel="noopener">
     <div class="ph"><img loading="lazy" src="https://i.ebayimg.com/images/g/JE0AAeSwPDtopx5f/s-l500.webp" alt="">
-      <div class="badges"><span class="badge g">🏆 Cheapest</span><span class="badge v">⭐ Best value</span></div>
       <span class="cond used">Very Good - Refurbished</span>
     </div>
+    <div class="badges"><span class="badge g">🏆 Cheapest</span><span class="badge v">⭐ Best value</span></div>
     <div class="body">
       <div class="price">$259.95 <small>all-in</small></div>
       <div class="ship">Free shipping</div>
@@ -107,9 +111,9 @@ Plus: newest silicon we found (Tiger Lake, 2020), Excellent-Refurbished (best gr
 
   <a class="card" href="https://www.ebay.com/itm/225784105560" target="_blank" rel="noopener">
     <div class="ph"><img loading="lazy" src="https://i.ebayimg.com/images/g/eaAAAOSwuAJlDL-N/s-l500.webp" alt="">
-      <div class="badges"><span class="badge b">🥇 Best match</span></div>
       <span class="cond used">Excellent - Refurbished</span>
     </div>
+    <div class="badges"><span class="badge b">🥇 Best match</span></div>
     <div class="body">
       <div class="price">$469.99 <small>all-in</small></div>
       <div class="ship">Free shipping</div>
@@ -126,9 +130,9 @@ Plus: newest silicon we found (Tiger Lake, 2020), Excellent-Refurbished (best gr
 
   <a class="card" href="https://www.ebay.com/itm/188499060855" target="_blank" rel="noopener">
     <div class="ph"><img loading="lazy" src="https://i.ebayimg.com/images/g/VH0AAeSwcW9qK0BA/s-l500.webp" alt="">
-      <div class="badges"></div>
       <span class="cond used">Very Good - Refurbished</span>
     </div>
+    <div class="badges"></div>
     <div class="body">
       <div class="price">$319.99 <small>all-in</small></div>
       <div class="ship">Free shipping</div>
@@ -145,9 +149,20 @@ Plus: newest silicon we found (Tiger Lake, 2020), Excellent-Refurbished (best gr
 
   <a class="card" href="https://www.ebay.com/itm/158089736689" target="_blank" rel="noopener">
     <div class="ph"><img loading="lazy" src="https://i.ebayimg.com/images/g/ViYAAeSwwbZqWUDL/s-l500.webp" alt="">
-      <div class="badges"><span class="badge sk">🤖 Skippy's Pick</span></div>
       <span class="cond used">Excellent - Refurbished</span>
     </div>
+    <div class="badges"><span class="badge sk">🤖 Skippy's Pick<span class="sktip badge-tip">Everything else on this page asks you to give something up. This one doesn't.
+
+vs the 14&quot; Latitude 3410 ($259.95): the 3410 is the better deal and I'd take it if price were the only axis — but you said 14&quot; is tiny, and you're right for this workload. Code, browser and a terminal on a 14&quot; panel is three windows fighting over a placemat.
+
+vs the 17&quot; Precision 7750 ($479): the 17 costs $73 more, weighs six pounds, and hauls a 180W brick to school in a kid's backpack. It's a CAD workstation. You're running VS Code and Node.
+
+vs the other 15.6&quot; options ($352-362): both give you 256GB. node_modules and Docker images eat disk far faster than schoolwork does — 512GB is the spec that actually bites, and this doubles them for ~$45.
+
+The battery flag is why it's here, not despite it. Every other machine ships a 4-6 year old cell nobody mentions. This seller disclosed a bad one, a verified $29-49 SS03XL swaps in through the bottom cover with basic tools, and for $50 it ends up with the NEWEST battery on this page. The only honest listing in the set gets punished by the sticker price and rewarded by the real one.
+
+Plus: newest silicon we found (Tiger Lake, 2020), Excellent-Refurbished (best grade here), 3.7 lbs, and Claude runs on Anthropic's servers so none of this needs to be a monster — it needs RAM, disk and screen. This has all three.
+</span></span></div>
     <div class="body">
       <div class="price">$405.99 <small>out the door</small></div>
       <div class="ship">Free shipping</div>
@@ -164,9 +179,9 @@ Plus: newest silicon we found (Tiger Lake, 2020), Excellent-Refurbished (best gr
 
   <a class="card" href="https://www.ebay.com/itm/188645172157" target="_blank" rel="noopener">
     <div class="ph"><img loading="lazy" src="https://i.ebayimg.com/images/g/mQEAAeSwi1JqV8vL/s-l500.webp" alt="">
-      <div class="badges"></div>
       <span class="cond used">Excellent - Refurbished</span>
     </div>
+    <div class="badges"></div>
     <div class="body">
       <div class="price">$361.99 <small>all-in</small></div>
       <div class="ship">Free shipping</div>
@@ -183,9 +198,9 @@ Plus: newest silicon we found (Tiger Lake, 2020), Excellent-Refurbished (best gr
 
   <a class="card" href="https://www.ebay.com/itm/168528379648" target="_blank" rel="noopener">
     <div class="ph"><img loading="lazy" src="https://i.ebayimg.com/images/g/cPYAAeSwsHRqWIII/s-l500.webp" alt="">
-      <div class="badges"></div>
       <span class="cond used">Certified - Refurbished</span>
     </div>
+    <div class="badges"></div>
     <div class="body">
       <div class="price">$352.45 <small>all-in</small></div>
       <div class="ship">Free shipping</div>
@@ -202,9 +217,9 @@ Plus: newest silicon we found (Tiger Lake, 2020), Excellent-Refurbished (best gr
 
   <a class="card" href="https://www.ebay.com/itm/257585032506" target="_blank" rel="noopener">
     <div class="ph"><img loading="lazy" src="https://i.ebayimg.com/images/g/6iMAAeSwF0pqPCRk/s-l500.webp" alt="">
-      <div class="badges"></div>
       <span class="cond used">Good - Refurbished</span>
     </div>
+    <div class="badges"></div>
     <div class="body">
       <div class="price">$479.00 <small>all-in</small></div>
       <div class="ship">Free shipping</div>
@@ -221,9 +236,9 @@ Plus: newest silicon we found (Tiger Lake, 2020), Excellent-Refurbished (best gr
 
   <a class="card" href="https://www.ebay.com/itm/377042048058" target="_blank" rel="noopener">
     <div class="ph"><img loading="lazy" src="https://i.ebayimg.com/images/g/UkQAAeSwhgxpuXN6/s-l500.webp" alt="">
-      <div class="badges"></div>
       <span class="cond used">Very Good - Refurbished</span>
     </div>
+    <div class="badges"></div>
     <div class="body">
       <div class="price">$689.00 <small>all-in</small></div>
       <div class="ship">Free shipping</div>
@@ -240,9 +255,9 @@ Plus: newest silicon we found (Tiger Lake, 2020), Excellent-Refurbished (best gr
 
   <a class="card" href="https://www.ebay.com/itm/287442518810" target="_blank" rel="noopener">
     <div class="ph"><img loading="lazy" src="https://i.ebayimg.com/images/g/O38AAeSwMWtqLDIa/s-l500.webp" alt="">
-      <div class="badges"></div>
       <span class="cond used">Good - Refurbished</span>
     </div>
+    <div class="badges"></div>
     <div class="body">
       <div class="price">$489.00 <small>all-in</small></div>
       <div class="ship">Free shipping</div>
@@ -259,6 +274,6 @@ Plus: newest silicon we found (Tiger Lake, 2020), Excellent-Refurbished (best gr
   </div>
   <footer>
     Prices/specs are the seller's claim at generation time and move (auctions especially). Read the listing before buying.<br>
-    Generated 2026-07-17 13:36 UTC · shop-ebay skill · not affiliated with eBay.
+    Generated 2026-07-17 13:42 UTC · shop-ebay skill · not affiliated with eBay.
   </footer>
 </div></body></html>
