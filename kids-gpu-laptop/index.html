@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kids laptop - schoolwork + app dev, dedicated GPU, ~$500 — eBay picks</title>
+<meta property="og:title" content="Kids laptop - schoolwork + app dev, dedicated GPU, ~$500 — ranked eBay listings">
+<style>
+  :root{--ink:#1d2a32;--muted:#5b6b76;--line:#e6ebee;--bg:#f4f7f9;--g:#1f9d63;--a:#c8851a;--blue:#1f6f93;--purple:#6b4f9d;--sk:#c0392b}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1120px;margin:0 auto;padding:18px 16px 60px}
+  header.hero{background:linear-gradient(135deg,#0b3d2e,#1f6f93);color:#fff;border-radius:18px;padding:22px 22px;margin-bottom:16px;box-shadow:0 10px 30px rgba(20,60,70,.18)}
+  header.hero h1{margin:0 0 6px;font-size:24px}
+  header.hero p{margin:3px 0;font-size:14px;opacity:.95}
+  .highlights{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin:14px 0 4px}
+  .hlcard{position:relative;z-index:2;display:flex;flex-direction:column;gap:2px;background:#fff;border-radius:14px;padding:12px 14px;text-decoration:none;color:inherit;border-left:5px solid var(--g);box-shadow:0 4px 14px rgba(20,40,50,.07)}
+  .hlcard.match{border-left-color:var(--a)} .hlcard.value{border-left-color:var(--purple)}
+  .hlcard.skippy{border-left-color:var(--sk);position:relative;overflow:visible}
+  .hlcard.skippy:hover{z-index:60}
+  .hltag .hint{font-style:normal;font-weight:500;color:var(--sk);opacity:.85;margin-left:4px}
+  /* Opens DOWNWARD: the Skippy card sits near the top of the page, so an upward
+     tooltip would open off-screen. A hover tooltip must never scroll — keep
+     skippys_pick.why to ~3 short lines (see SKILL.md). max-height is a backstop
+     against an over-written rationale, not a licence to write one. */
+  .sktip{display:none;position:absolute;top:calc(100% + 12px);left:0;width:min(460px,88vw);
+    max-height:min(52vh,340px);overflow-y:auto;overscroll-behavior:contain;
+    background:#12242c;color:#eef4f7;padding:13px 15px;border-radius:12px;font-size:12.5px;
+    line-height:1.55;font-weight:400;white-space:pre-line;box-shadow:0 14px 34px rgba(0,0,0,.34);z-index:30}
+  .sktip::after{content:"";position:absolute;bottom:100%;left:28px;border:7px solid transparent;border-bottom-color:#12242c}
+  .hlcard.skippy:hover .sktip, .hlcard.skippy:focus .sktip{display:block}
+  .badge-tip{top:calc(100% + 9px);left:0;width:min(380px,76vw);font-size:12px}
+  .badge-tip::after{left:16px}
+  .badge.sk:hover .badge-tip{display:block}
+  /* No hover on touch: show the rationale inline on the Skippy card, and drop the
+     badge tooltip entirely (it'd blow out a 100px badge, and it's the same text). */
+  @media (hover:none){
+    .hlcard.skippy .sktip{display:block;position:static;width:auto;margin-top:10px;box-shadow:none}
+    .hlcard.skippy .sktip::after{display:none}
+    .hltag .hint{display:none}
+    .badge-tip{display:none !important}
+  }
+  .hltag{font-size:12px;color:var(--muted);font-weight:600}
+  .hlprice{font-size:21px;font-weight:800}
+  .hltitle{font-size:12.5px;color:var(--muted);line-height:1.35}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;margin-top:14px}
+  .card{position:relative;z-index:1;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:visible;text-decoration:none;color:inherit;box-shadow:0 4px 14px rgba(20,40,50,.06);transition:transform .12s,box-shadow .12s}
+  .card:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(20,40,50,.14);z-index:50}
+  .ph{position:relative;height:190px;background:#dfe6ea;overflow:hidden;border-radius:15px 15px 0 0}
+  .ph img{width:100%;height:100%;object-fit:contain;display:block;background:#fff}
+  .badges{position:absolute;top:8px;left:8px;display:flex;flex-direction:column;gap:4px;z-index:6;align-items:flex-start}
+  .badge{position:relative;font-size:11px;font-weight:700;color:#fff;padding:3px 8px;border-radius:20px;background:var(--g)}
+  .badge.sk{cursor:help}
+  .badge.b{background:var(--a)} .badge.v{background:var(--purple)} .badge.sk{background:var(--sk)}
+  .cond{position:absolute;bottom:8px;right:8px;font-size:11px;font-weight:700;padding:3px 8px;border-radius:8px;background:#eef;color:#334}
+  .cond.new{background:#e4f7ec;color:#12703f}.cond.used{background:#fff3e0;color:#8a5a11}.cond.parts{background:#fde8e8;color:#9a2b2b}
+  .body{padding:12px 13px 14px;display:flex;flex-direction:column;gap:4px}
+  .nick{font-size:17px;font-weight:800;letter-spacing:-.01em;color:var(--blue);line-height:1.1;margin-bottom:2px}
+  .hlnick{font-style:normal;font-size:13px;font-weight:700;color:var(--blue);margin-left:6px}
+  .price{font-size:20px;font-weight:800}.price small{font-size:11px;font-weight:600;color:var(--muted)}
+  .price .auc{font-size:11px;color:#9a2b2b;font-style:normal;margin-left:6px;font-weight:700}
+  .ship{font-size:12.5px;color:var(--g);font-weight:600}
+  .deliv{font-size:12px;color:var(--blue);font-weight:600}
+  .fix{font-size:11.5px;color:var(--a);font-weight:600}
+  .fix .assumed{font-weight:500;color:var(--muted)}
+  .title{font-size:13px;line-height:1.35;color:var(--ink);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .specs{display:grid;grid-template-columns:auto 1fr;gap:2px 10px;margin:8px 0 2px;padding:8px 0 0;border-top:1px solid var(--line);font-size:12px}
+  .specs dt{color:var(--muted);font-weight:600;letter-spacing:.02em}
+  .specs dd{margin:0;text-align:right;font-weight:700;color:var(--ink);font-variant-numeric:tabular-nums}
+  .specs dd.unk{color:#aebac2;font-weight:600}
+  .specs dd.bad{color:#9a2b2b}
+  .specs dd .note{display:block;font-size:10.5px;font-weight:600;color:var(--muted);letter-spacing:0;margin-top:1px}
+  .specs dd em{font-style:normal;font-size:10.5px;font-weight:700;background:#fde8e8;color:#9a2b2b;padding:1px 5px;border-radius:6px;margin-left:4px}
+  .meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:2px;font-size:11.5px;color:var(--muted)}
+  .meta .score{color:var(--purple);font-weight:600}
+  footer{margin-top:26px;font-size:12px;color:var(--muted);text-align:center;line-height:1.6}
+</style></head><body>
+<div class="wrap">
+  <header class="hero">
+    <h1>Kids laptop - schoolwork + app dev, dedicated GPU, ~$500 · under $575</h1>
+    <p>20 ranked listings · sorted by value · all-in price = item + shipping</p>
+    <p>About $500 each (up to $575 stretch). Mostly schoolwork, with room for app dev: dedicated NVIDIA/AMD GPU required, 32GB RAM preferred, Win 11-ready CPU (Intel 10th gen+ / Ryzen 4000+), Full HD+, 512GB+ SSD, sellers 97%+, Buy It Now only. Specs, condition and seller % read from each listing page; listings whose description discloses a defect were removed.</p>
+  </header>
+  <div class="highlights">
+    
+    <a class="hlcard skippy" href="https://www.ebay.com/itm/800315828463" target="_blank" rel="noopener">
+      <span class="hltag">🤖 Skippy's Pick <em class="hint">hover for why</em></span>
+      <span class="hlprice">$499.99 <em class="hlnick">Ada</em></span>
+      <span class="hltitle">Dell Precision 7560 | i7-11850H | 64GB RAM | 512GB NVMe | RTX A2000 | </span>
+      <span class="sktip">Right at $500 with free shipping: 11th-gen i7-11850H, real NVIDIA RTX A2000 card, 64GB RAM (double the ask), 512GB, Full HD, Win 11 Pro, charger included, 30-day warranty. Catch: battery is 50-69%.
+Cheaper: Tia, the $399.99 ZBook Fury G7 (T1000, 32GB, charger in, limited returns).
+Faster: Ace, the $549 ZBook Fury G8 (RTX A3000 6GB, 64GB).
+</span>
+    </a>
+    <a class="hlcard cheapest" href="https://www.ebay.com/itm/840023879792" target="_blank" rel="noopener">
+      <span class="hltag">🏆 Cheapest all-in</span>
+      <span class="hlprice">$389.49 <em class="hlnick">Fitz</em></span>
+      <span class="hltitle">HP ZBook Power G8 15&quot; FHD I7-11800H @ 2.30GHz 32GB 512GB 4GB T1200 *Gr</span></a>
+    <a class="hlcard match" href="https://www.ebay.com/itm/287358105789" target="_blank" rel="noopener">
+      <span class="hltag">🥇 Best spec match</span>
+      <span class="hlprice">$559.98 <em class="hlnick">Lou</em></span>
+      <span class="hltitle">Dell Precision 7550 Workstation 15.6&quot; FHD i7-10850H 1TB SSD 32GB RAM R</span></a>
+    <a class="hlcard value" href="https://www.ebay.com/itm/840023879792" target="_blank" rel="noopener">
+      <span class="hltag">⭐ Best value</span>
+      <span class="hlprice">$389.49 <em class="hlnick">Fitz</em></span>
+      <span class="hltitle">HP ZBook Power G8 15&quot; FHD I7-11800H @ 2.30GHz 32GB 512GB 4GB T1200 *Gr</span></a>
+  </div>
+  <div class="grid">
+    
+  <a class="card" href="https://www.ebay.com/itm/840023879792" target="_blank" rel="noopener">
+    <div class="ph"><img loading="lazy" src="https://i.ebayimg.com/images/g/HOUAAeSwKb5q0N1E/s-l500.webp" alt="">
+      <span class="cond used">Used</span>
+    </div>
+    <div class="badges"><span class="badge g">🏆 Cheapest</span><span class="badge v">⭐ Best value</span></div>
+    <div class="body">
+      <div class="nick">Fitz</div>
+      <div class="price">$389.49 <small>all-in</small></div>
+      <div class="ship">Free shipping</div>
+      
+      <div class="deliv">🚚 Est. Wed, Oct 28 – Fri, Oct 30</div>
+      <div class="title">HP ZBook Power G8 15&quot; FHD I7-11800H @ 2.30GHz 32GB 512GB 4GB T1200 *Grade C*</div>
+      <dl class="specs"><dt>Screen</dt><dd>15&quot;<span class="note">1920px FHD+</span></dd><dt>CPU</dt><dd>i7-11800H<span class="note">45W · fast, hot, heavy</span></dd><dt>Silicon</dt><dd>2020 · 11th gen</dd><dt>Speed</dt><dd>2.30 GHz</dd><dt>RAM</dt><dd>32GB</dd><dt>Storage</dt><dd>512GB</dd><dt>GPU</dt><dd>NVIDIA T1200<span class="note">discrete · 3D ok</span></dd><dt>Weight</dt><dd class="unk">—</dd></dl>
+      <div class="meta">
+        <span class="seller">99.8% ★TopRated</span>
+        <span class="loc">United States</span>
+        <span class="score">match 22</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="card" href="https://www.ebay.com/itm/327408352955" target="_blank" rel="noopener">
+    <div class="ph"><img loading="lazy" src="https://i.ebayimg.com/images/g/8U0AAeSw1aNq0qSf/s-l500.webp" alt="">
+      <span class="cond used">Used</span>
+    </div>
+    <div class="badges"></div>
+    <div class="body">
+      <div class="nick">Ivy</div>
+      <div class="price">$439.99 <small>all-in</small></div>
+      <div class="ship">Free shipping</div>
+      
+      <div class="deliv">🚚 Est. Wed, Oct 28 – Sat, Oct 31</div>
+      <div class="title">Dell Precision 7550 Intel i7-10850H@2.70GHz 32GB 1TB T2000 W/AC Win11 *READ*</div>
+      <dl class="specs"><dt>Screen</dt><dd>15.6&quot;<span class="note">1920px FHD+</span></dd><dt>CPU</dt><dd>i7-10850H<span class="note">45W · fast, hot, heavy</span></dd><dt>Silicon</dt><dd>2020 · 10th gen</dd><dt>Speed</dt><dd>2.70 GHz</dd><dt>RAM</dt><dd>32GB</dd><dt>Storage</dt><dd>1TB</dd><dt>GPU</dt><dd>NVIDIA Quadro T2000<span class="note">discrete · 3D ok</span></dd><dt>Weight</dt><dd class="unk">—</dd></dl>
+      <div class="meta">
+        <span class="seller">99.7%</span>
+        <span class="loc">United States</span>
+        <span class="score">match 23</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="card" href="https://www.ebay.com/itm/900013230559" target="_blank" rel="noopener">
+    <div class="ph"><img loading="lazy" src="https://i.ebayimg.com/images/g/bzIAAeSwNZ9qz37x/s-l500.webp" alt="">
+      <span class="cond used">Used</span>
+    </div>
+    <div class="badges"></div>
+    <div class="body">
+      <div class="nick">Jules</div>
+      <div class="price">$459.99 <small>all-in</small></div>
+      <div class="ship">Free shipping</div>
+      
+      <div class="deliv">🚚 Est. Wed, Oct 28 – Fri, Oct 30</div>
+      <div class="title">Dell Precision 7750 17.3 FHD i9-10885H 2.40GHz 32GB 1TB SSD NVIDIA Quadro T1000</div>
+      <dl class="specs"><dt>Screen</dt><dd>17&quot;<span class="note">1920px FHD+</span></dd><dt>CPU</dt><dd>i9-10885H<span class="note">45W · fast, hot, heavy</span></dd><dt>Silicon</dt><dd>2020 · 10th gen</dd><dt>Speed</dt><dd>2.40 GHz</dd><dt>RAM</dt><dd>32GB</dd><dt>Storage</dt><dd>1TB</dd><dt>GPU</dt><dd>NVIDIA Quadro T1000<span class="note">discrete · 3D ok</span></dd><dt>Weight</dt><dd class="unk">—</dd></dl>
+      <div class="meta">
+        <span class="seller">99.6% ★TopRated</span>
+        <span class="loc">United States</span>
+        <span class="score">match 24</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="card" href="https://www.ebay.com/itm/800315828463" target="_blank" rel="noopener">
+    <div class="ph"><img loading="lazy" src="https://i.ebayimg.com/images/g/aWQAAeSwkE9qT-Vd/s-l500.webp" alt="">
+      <span class="cond used">Used</span>
+    </div>
+    <div class="badges"><span class="badge sk">🤖 Skippy's Pick<span class="sktip badge-tip">Right at $500 with free shipping: 11th-gen i7-11850H, real NVIDIA RTX A2000 card, 64GB RAM (double the ask), 512GB, Full HD, Win 11 Pro, charger included, 30-day warranty. Catch: battery is 50-69%.
+Cheaper: Tia, the $399.99 ZBook Fury G7 (T1000, 32GB, charger in, limited returns).
+Faster: Ace, the $549 ZBook Fury G8 (RTX A3000 6GB, 64GB).
+</span></span></div>
+    <div class="body">
+      <div class="nick">Ada</div>
+      <div class="price">$499.99 <small>all-in</small></div>
+      <div class="ship">Free shipping</div>
+      
+      <div class="deliv">🚚 Est. Thu, Oct 29 – Mon, Nov 2</div>
+      <div class="title">Dell Precision 7560 | i7-11850H | 64GB RAM | 512GB NVMe | RTX A2000 | Fair Batt</div>
+      <dl class="specs"><dt>Screen</dt><dd>15.6&quot;<span class="note">1920px FHD+</span></dd><dt>CPU</dt><dd>i7-11850H<span class="note">45W · fast, hot, heavy</span></dd><dt>Silicon</dt><dd>2020 · 11th gen</dd><dt>Speed</dt><dd>2.50 GHz</dd><dt>RAM</dt><dd>64GB</dd><dt>Storage</dt><dd>512GB</dd><dt>GPU</dt><dd>NVIDIA RTX A2000<span class="note">discrete · 3D ok</span></dd><dt>Weight</dt><dd class="unk">—</dd></dl>
+      <div class="meta">
+        <span class="seller">99.9% ★TopRated</span>
+        <span class="loc">United States</span>
+        <span class="score">match 26</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="card" href="https://www.ebay.com/itm/189062828687" target="_blank" rel="noopener">
+    <div class="ph"><img loading="lazy" src="https://i.ebayimg.com/images/g/nsIAAeSwlSFqx~9-/s-l500.webp" alt="">
+      <span class="cond used">Used</span>
+    </div>
+    <div class="badges"></div>
+    <div class="body">
+      <div class="nick">Kit</div>
+      <div class="price">$500.00 <small>all-in</small></div>
+      <div class="ship">Free shipping</div>
+      
+      <div class="deliv">🚚 Est. Wed, Oct 28 – Sat, Oct 31</div>
+      <div class="title">HP ZBook Fury 15 G7 - i7-10850H - 32GB RAM -RTX 3000- 1 TB SSD</div>
+      <dl class="specs"><dt>Screen</dt><dd>15.6&quot;</dd><dt>CPU</dt><dd>i7-10850H<span class="note">45W · fast, hot, heavy</span></dd><dt>Silicon</dt><dd>2020 · 10th gen</dd><dt>Speed</dt><dd class="unk">—</dd><dt>RAM</dt><dd>32GB</dd><dt>Storage</dt><dd>1TB</dd><dt>GPU</dt><dd>RTX 3000<span class="note">discrete · 3D ok (per title)</span></dd><dt>Weight</dt><dd class="unk">—</dd></dl>
+      <div class="meta">
+        <span class="seller">99.7%</span>
+        <span class="loc">United States</span>
+        <span class="score">match 26</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="card" href="https://www.ebay.com/itm/287358105789" target="_blank" rel="noopener">
+    <div class="ph"><img loading="lazy" src="https://i.ebayimg.com/images/g/WLYAAeSwbGpqGAzr/s-l500.webp" alt="">
+      <span class="cond used">Very Good - Refurbished</span>
+    </div>
+    <div class="badges"><span class="badge b">🥇 Best match</span></div>
+    <div class="body">
+      <div class="nick">Lou</div>
+      <div class="price">$559.98 <small>all-in</small></div>
+      <div class="ship">Free shipping</div>
+      
+      <div class="deliv">🚚 Est. Wed, Oct 28 – Fri, Oct 30</div>
+      <div class="title">Dell Precision 7550 Workstation 15.6&quot; FHD i7-10850H 1TB SSD 32GB RAM RTX3000</div>
+      <dl class="specs"><dt>Screen</dt><dd>15.6&quot;<span class="note">1920px FHD+</span></dd><dt>CPU</dt><dd>i7-10850H<span class="note">45W · fast, hot, heavy</span></dd><dt>Silicon</dt><dd>2020 · 10th gen</dd><dt>Speed</dt><dd>2.7 GHz</dd><dt>RAM</dt><dd>32GB</dd><dt>Storage</dt><dd>1TB</dd><dt>GPU</dt><dd>NVIDIA Quadro RTX 3000<span class="note">discrete · 3D ok</span></dd><dt>Weight</dt><dd class="unk">—</dd></dl>
+      <div class="meta">
+        <span class="seller">99.8% ★TopRated</span>
+        <span class="loc">United States</span>
+        <span class="score">match 29</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="card" href="https://www.ebay.com/itm/940041917551" target="_blank" rel="noopener">
+    <div class="ph"><img loading="lazy" src="https://i.ebayimg.com/images/g/K9wAAeSwjFJq3se0/s-l500.webp" alt="">
+      <span class="cond used">Used</span>
+    </div>
+    <div class="badges"></div>
+    <div class="body">
+      <div class="nick">Ozzy</div>
+      <div class="price">$474.99 <small>all-in</small></div>
+      <div class="ship">Free shipping</div>
+      
+      <div class="deliv">🚚 Est. Thu, Oct 29 – Wed, Nov 4</div>
+      <div class="title">New ListingDell Precision 7750 Laptop 10th Gen 32GB NVMe 512GB Win 11 Pro</div>
+      <dl class="specs"><dt>Screen</dt><dd>17.3&quot;<span class="note">1920px FHD+</span></dd><dt>CPU</dt><dd>i7-10875H<span class="note">45W · fast, hot, heavy</span></dd><dt>Silicon</dt><dd>2020 · 10th gen</dd><dt>Speed</dt><dd>2.3 GHz</dd><dt>RAM</dt><dd>32GB</dd><dt>Storage</dt><dd>512GB</dd><dt>GPU</dt><dd>NVIDIA Quadro RTX 3000<span class="note">discrete · 3D ok</span></dd><dt>Weight</dt><dd class="unk">—</dd></dl>
+      <div class="meta">
+        <span class="seller">97.9%</span>
+        <span class="loc">United States</span>
+        <span class="score">match 24</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="card" href="https://www.ebay.com/itm/327408378632" target="_blank" rel="noopener">
+    <div class="ph"><img loading="lazy" src="https://i.ebayimg.com/images/g/CHwAAeSwFitq0qbF/s-l500.webp" alt="">
+      <span class="cond used">Used</span>
+    </div>
+    <div class="badges"></div>
+    <div class="body">
+      <div class="nick">Quinn</div>
+      <div class="price">$419.99 <small>all-in</small></div>
+      <div class="ship">Free shipping</div>
+      
+      <div class="deliv">🚚 Est. Wed, Oct 28 – Sat, Oct 31</div>
+      <div class="title">Dell Precision 7550 Intel i7-10850H@2.70GHz 32GB 1TB T1000 W/AC Win11 *READ*</div>
+      <dl class="specs"><dt>Screen</dt><dd>15.6&quot;<span class="note">1920px FHD+</span></dd><dt>CPU</dt><dd>i7-10850H<span class="note">45W · fast, hot, heavy</span></dd><dt>Silicon</dt><dd>2020 · 10th gen</dd><dt>Speed</dt><dd>2.70 GHz</dd><dt>RAM</dt><dd>32GB</dd><dt>Storage</dt><dd>1TB</dd><dt>GPU</dt><dd>NVIDIA Quadro T1000<span class="note">discrete · 3D ok</span></dd><dt>Weight</dt><dd class="unk">—</dd></dl>
+      <div class="meta">
+        <span class="seller">99.7%</span>
+        <span class="loc">United States</span>
+        <span class="score">match 21</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="card" href="https://www.ebay.com/itm/327416826860" target="_blank" rel="noopener">
+    <div class="ph"><img loading="lazy" src="https://i.ebayimg.com/images/g/H-sAAeSwb3Rq2TFl/s-l500.webp" alt="">
+      <span class="cond used">Used</span>
+    </div>
+    <div class="badges"></div>
+    <div class="body">
+      <div class="nick">Rex</div>
+      <div class="price">$459.99 <small>all-in</small></div>
+      <div class="ship">Free shipping</div>
+      
+      <div class="deliv">🚚 Est. Wed, Oct 28 – Sat, Oct 31</div>
+      <div class="title">Dell Precision 7560 15.6&quot; Intel i7-11850H@2.5GHz 32GB 1TB T1200*No camera* *READ</div>
+      <dl class="specs"><dt>Screen</dt><dd>15.6&quot;<span class="note">1920px FHD+</span></dd><dt>CPU</dt><dd>i7-11850H<span class="note">45W · fast, hot, heavy</span></dd><dt>Silicon</dt><dd>2020 · 11th gen</dd><dt>Speed</dt><dd>2.5 GHz</dd><dt>RAM</dt><dd>32GB</dd><dt>Storage</dt><dd>1TB</dd><dt>GPU</dt><dd>NVIDIA T1200<span class="note">discrete · 3D ok</span></dd><dt>Weight</dt><dd class="unk">—</dd></dl>
+      <div class="meta">
+        <span class="seller">99.7%</span>
+        <span class="loc">United States</span>
+        <span class="score">match 23</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="card" href="https://www.ebay.com/itm/327415310508" target="_blank" rel="noopener">
+    <div class="ph"><img loading="lazy" src="https://i.ebayimg.com/images/g/wiIAAeSwPu5q2A7Q/s-l500.webp" alt="">
+      <span class="cond used">Used</span>
+    </div>
+    <div class="badges"></div>
+    <div class="body">
+      <div class="nick">Sal</div>
+      <div class="price">$459.99 <small>all-in</small></div>
+      <div class="ship">Free shipping</div>
+      
+      <div class="deliv">🚚 Est. Wed, Oct 28 – Sat, Oct 31</div>
+      <div class="title">Dell Precision 7550 Intel i7-10850H@2.70GHz 32GB 1TB T2000 W/AC Win11 &quot;no camera</div>
+      <dl class="specs"><dt>Screen</dt><dd>15.6&quot;<span class="note">1920px FHD+</span></dd><dt>CPU</dt><dd>i7-10850H<span class="note">45W · fast, hot, heavy</span></dd><dt>Silicon</dt><dd>2020 · 10th gen</dd><dt>Speed</dt><dd>2.70 GHz</dd><dt>RAM</dt><dd>32GB</dd><dt>Storage</dt><dd>1TB</dd><dt>GPU</dt><dd>NVIDIA Quadro T2000<span class="note">discrete · 3D ok</span></dd><dt>Weight</dt><dd class="unk">—</dd></dl>
+      <div class="meta">
+        <span class="seller">99.7%</span>
+        <span class="loc">United States</span>
+        <span class="score">match 23</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="card" href="https://www.ebay.com/itm/307246248311" target="_blank" rel="noopener">
+    <div class="ph"><img loading="lazy" src="https://i.ebayimg.com/images/g/lP8AAeSwynJq28I~/s-l500.webp" alt="">
+      <span class="cond used">Used</span>
+    </div>
+    <div class="badges"></div>
+    <div class="body">
+      <div class="nick">Ace</div>
+      <div class="price">$549.00 <small>all-in</small></div>
+      <div class="ship">Free shipping</div>
+      
+      <div class="deliv">🚚 Est. Wed, Oct 28 – Fri, Oct 30</div>
+      <div class="title">HP Zbook Fury G8 15.6&quot; Core i7-11850H 512GB 64GB Win 11 Pro A3000</div>
+      <dl class="specs"><dt>Screen</dt><dd>15.6&quot;<span class="note">1920px FHD+</span></dd><dt>CPU</dt><dd>i7-11850H<span class="note">45W · fast, hot, heavy</span></dd><dt>Silicon</dt><dd>2020 · 11th gen</dd><dt>Speed</dt><dd>2.50 GHz</dd><dt>RAM</dt><dd>64GB</dd><dt>Storage</dt><dd>512GB</dd><dt>GPU</dt><dd>RTX A3000 Mobile, TigerLak…<span class="note">discrete · 3D ok</span></dd><dt>Weight</dt><dd class="unk">—</dd></dl>
+      <div class="meta">
+        <span class="seller">99.8%</span>
+        <span class="loc">United States</span>
+        <span class="score">match 27</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="card" href="https://www.ebay.com/itm/128137579407" target="_blank" rel="noopener">
+    <div class="ph"><img loading="lazy" src="https://i.ebayimg.com/images/g/bFcAAeSwKudq0Ue1/s-l500.webp" alt="">
+      <span class="cond used">Used</span>
+    </div>
+    <div class="badges"></div>
+    <div class="body">
+      <div class="nick">Zed</div>
+      <div class="price">$540.50 <small>all-in</small></div>
+      <div class="ship">+ $23.00 ship</div>
+      
+      <div class="deliv">🚚 Est. Thu, Oct 29 – Mon, Nov 2</div>
+      <div class="title">Boxx GoBoxx G2721 17&quot; i7-10875H 32GB 1TB M.2 SSD Quadro RTX 3000 6GB W11P T9-D9</div>
+      <dl class="specs"><dt>Screen</dt><dd>17&quot;<span class="note">1920px FHD+</span></dd><dt>CPU</dt><dd>i7-10875H<span class="note">45W · fast, hot, heavy</span></dd><dt>Silicon</dt><dd>2020 · 10th gen</dd><dt>Speed</dt><dd class="unk">—</dd><dt>RAM</dt><dd>32GB</dd><dt>Storage</dt><dd>1TB</dd><dt>GPU</dt><dd>Quadro RTX 3000<span class="note">discrete · 3D ok</span></dd><dt>Weight</dt><dd class="unk">—</dd></dl>
+      <div class="meta">
+        <span class="seller">99.8%</span>
+        <span class="loc">United States</span>
+        <span class="score">match 26</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="card" href="https://www.ebay.com/itm/327408443806" target="_blank" rel="noopener">
+    <div class="ph"><img loading="lazy" src="https://i.ebayimg.com/images/g/N6wAAeSwTktq0rOz/s-l500.webp" alt="">
+      <span class="cond used">Used</span>
+    </div>
+    <div class="badges"></div>
+    <div class="body">
+      <div class="nick">#3806</div>
+      <div class="price">$439.99 <small>all-in</small></div>
+      <div class="ship">Free shipping</div>
+      
+      <div class="deliv">🚚 Est. Wed, Oct 28 – Sat, Oct 31</div>
+      <div class="title">Dell Precision 7550 Intel i7-10850H@2.70GHz 32GB 1TB T1000 W/AC Windows 11</div>
+      <dl class="specs"><dt>Screen</dt><dd>15.6&quot;<span class="note">1920px FHD+</span></dd><dt>CPU</dt><dd>i7-10850H<span class="note">45W · fast, hot, heavy</span></dd><dt>Silicon</dt><dd>2020 · 10th gen</dd><dt>Speed</dt><dd>2.70 GHz</dd><dt>RAM</dt><dd>32GB</dd><dt>Storage</dt><dd>1TB</dd><dt>GPU</dt><dd>NVIDIA Quadro T1000<span class="note">discrete · 3D ok</span></dd><dt>Weight</dt><dd class="unk">—</dd></dl>
+      <div class="meta">
+        <span class="seller">99.7%</span>
+        <span class="loc">United States</span>
+        <span class="score">match 21</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="card" href="https://www.ebay.com/itm/377489163124" target="_blank" rel="noopener">
+    <div class="ph"><img loading="lazy" src="https://i.ebayimg.com/images/g/AL0AAeSwgzNq2~qQ/s-l500.webp" alt="">
+      <span class="cond used">Good - Refurbished</span>
+    </div>
+    <div class="badges"></div>
+    <div class="body">
+      <div class="nick">#3124</div>
+      <div class="price">$529.99 <small>all-in</small></div>
+      <div class="ship">Free shipping</div>
+      
+      <div class="deliv">🚚 Est. Thu, Oct 29 – Mon, Nov 2</div>
+      <div class="title">HP ZBook Power G8 15.6&quot; FHD Intel Core i7-11850H 64GB 1TB SSD NVIDIA T1200 W11P</div>
+      <dl class="specs"><dt>Screen</dt><dd>15.6&quot;<span class="note">1920px FHD+</span></dd><dt>CPU</dt><dd>i7-11850H<span class="note">45W · fast, hot, heavy</span></dd><dt>Silicon</dt><dd>2020 · 11th gen</dd><dt>Speed</dt><dd>2.5 GHz</dd><dt>RAM</dt><dd>64GB</dd><dt>Storage</dt><dd>1TB</dd><dt>GPU</dt><dd>NVIDIA Quadro T1200<span class="note">discrete · 3D ok</span></dd><dt>Weight</dt><dd class="unk">—</dd></dl>
+      <div class="meta">
+        <span class="seller">99.7% ★TopRated</span>
+        <span class="loc">United States</span>
+        <span class="score">match 25</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="card" href="https://www.ebay.com/itm/327416528696" target="_blank" rel="noopener">
+    <div class="ph"><img loading="lazy" src="https://i.ebayimg.com/images/g/9gAAAeSw2npq2Ozy/s-l500.webp" alt="">
+      <span class="cond used">Used</span>
+    </div>
+    <div class="badges"></div>
+    <div class="body">
+      <div class="nick">#8696</div>
+      <div class="price">$429.99 <small>all-in</small></div>
+      <div class="ship">Free shipping</div>
+      
+      <div class="deliv">🚚 Est. Wed, Oct 28 – Sat, Oct 31</div>
+      <div class="title">Dell Precision 7550 Intel i7-10850H@2.70GHz 32GB 512GB T2000 Win11 &quot;no camera</div>
+      <dl class="specs"><dt>Screen</dt><dd>15.6&quot;<span class="note">1920px FHD+</span></dd><dt>CPU</dt><dd>i7-10850H<span class="note">45W · fast, hot, heavy</span></dd><dt>Silicon</dt><dd>2020 · 10th gen</dd><dt>Speed</dt><dd>2.70 GHz</dd><dt>RAM</dt><dd>32GB</dd><dt>Storage</dt><dd>512GB</dd><dt>GPU</dt><dd>NVIDIA Quadro T2000<span class="note">discrete · 3D ok</span></dd><dt>Weight</dt><dd class="unk">—</dd></dl>
+      <div class="meta">
+        <span class="seller">99.7%</span>
+        <span class="loc">United States</span>
+        <span class="score">match 20</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="card" href="https://www.ebay.com/itm/327408519124" target="_blank" rel="noopener">
+    <div class="ph"><img loading="lazy" src="https://i.ebayimg.com/images/g/ZrUAAeSwBotq0sNc/s-l500.webp" alt="">
+      <span class="cond used">Used</span>
+    </div>
+    <div class="badges"></div>
+    <div class="body">
+      <div class="nick">#9124</div>
+      <div class="price">$499.99 <small>all-in</small></div>
+      <div class="ship">Free shipping</div>
+      
+      <div class="deliv">🚚 Est. Thu, Oct 29 – Mon, Nov 2</div>
+      <div class="title">Dell Precision 7560 15.6&quot; Intel i7-11850H@2.5GHz 32GB 1TB T1200 W/AC Win 11</div>
+      <dl class="specs"><dt>Screen</dt><dd>15.6&quot;<span class="note">1920px FHD+</span></dd><dt>CPU</dt><dd>i7-11850H<span class="note">45W · fast, hot, heavy</span></dd><dt>Silicon</dt><dd>2020 · 11th gen</dd><dt>Speed</dt><dd>2.5 GHz</dd><dt>RAM</dt><dd>32GB</dd><dt>Storage</dt><dd>1TB</dd><dt>GPU</dt><dd>NVIDIA T1200<span class="note">discrete · 3D ok</span></dd><dt>Weight</dt><dd class="unk">—</dd></dl>
+      <div class="meta">
+        <span class="seller">99.7%</span>
+        <span class="loc">United States</span>
+        <span class="score">match 23</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="card" href="https://www.ebay.com/itm/407245317457" target="_blank" rel="noopener">
+    <div class="ph"><img loading="lazy" src="https://i.ebayimg.com/images/g/liIAAeSwDtpqtqp5/s-l500.webp" alt="">
+      <span class="cond used">Used</span>
+    </div>
+    <div class="badges"></div>
+    <div class="body">
+      <div class="nick">#7457</div>
+      <div class="price">$544.99 <small>all-in</small></div>
+      <div class="ship">Free shipping</div>
+      
+      <div class="deliv">🚚 Est. Thu, Oct 29 – Mon, Nov 2</div>
+      <div class="title">Lenovo ThinkPad P17 Gen 1 20SQS14P00 i7-10750H 32GB 1TB SSD Quadro T2000</div>
+      <dl class="specs"><dt>Screen</dt><dd>17.3&quot;<span class="note">1920px FHD+</span></dd><dt>CPU</dt><dd>i7-10750H<span class="note">45W · fast, hot, heavy</span></dd><dt>Silicon</dt><dd>2020 · 10th gen</dd><dt>Speed</dt><dd>2.60 GHz</dd><dt>RAM</dt><dd>32GB</dd><dt>Storage</dt><dd>1TB</dd><dt>GPU</dt><dd>NVIDIA Quadro T2000<span class="note">discrete · 3D ok</span></dd><dt>Weight</dt><dd class="unk">—</dd></dl>
+      <div class="meta">
+        <span class="seller">99.7% ★TopRated</span>
+        <span class="loc">United States</span>
+        <span class="score">match 25</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="card" href="https://www.ebay.com/itm/366467380367" target="_blank" rel="noopener">
+    <div class="ph"><img loading="lazy" src="https://i.ebayimg.com/images/g/OfYAAeSw5sZqKDsk/s-l500.webp" alt="">
+      <span class="cond used">Used</span>
+    </div>
+    <div class="badges"></div>
+    <div class="body">
+      <div class="nick">#0367</div>
+      <div class="price">$549.00 <small>all-in</small></div>
+      <div class="ship">Free shipping</div>
+      
+      <div class="deliv">🚚 Est. Wed, Oct 28 – Thu, Oct 29</div>
+      <div class="title">Dell Precision 5560 15.6&quot; 32GB 1TB, Titan Grey</div>
+      <dl class="specs"><dt>Screen</dt><dd>15.6&quot;<span class="note">1920px FHD+</span></dd><dt>CPU</dt><dd>i7-11850H<span class="note">45W · fast, hot, heavy</span></dd><dt>Silicon</dt><dd>2020 · 11th gen</dd><dt>Speed</dt><dd>3.0 GHz</dd><dt>RAM</dt><dd>32GB</dd><dt>Storage</dt><dd>1TB</dd><dt>GPU</dt><dd>NVIDIA T1200<span class="note">discrete · 3D ok</span></dd><dt>Weight</dt><dd class="unk">—</dd></dl>
+      <div class="meta">
+        <span class="seller">99.5% ★TopRated</span>
+        <span class="loc">United States</span>
+        <span class="score">match 25</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="card" href="https://www.ebay.com/itm/277736514750" target="_blank" rel="noopener">
+    <div class="ph"><img loading="lazy" src="https://i.ebayimg.com/images/g/670AAeSwws5plehV/s-l500.webp" alt="">
+      <span class="cond used">Used</span>
+    </div>
+    <div class="badges"></div>
+    <div class="body">
+      <div class="nick">#4750</div>
+      <div class="price">$420.00 <small>all-in</small></div>
+      <div class="ship">+ $20.00 ship</div>
+      
+      <div class="deliv">🚚 Est. Wed, Oct 28 – Sat, Oct 31</div>
+      <div class="title">HP ZBook Fury 15 G7 i7-10750H 2.6GHz 32GB 512GB SSD</div>
+      <dl class="specs"><dt>Screen</dt><dd>15.6&quot;</dd><dt>CPU</dt><dd>i7-10750H<span class="note">45W · fast, hot, heavy</span></dd><dt>Silicon</dt><dd>2020 · 10th gen</dd><dt>Speed</dt><dd>2.6 GHz</dd><dt>RAM</dt><dd>32GB</dd><dt>Storage</dt><dd>512GB</dd><dt>GPU</dt><dd>NVIDIA Quadro T2000<span class="note">discrete · 3D ok</span></dd><dt>Weight</dt><dd class="unk">—</dd></dl>
+      <div class="meta">
+        <span class="seller">99.5%</span>
+        <span class="loc">United States</span>
+        <span class="score">match 19</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="card" href="https://www.ebay.com/itm/960102345565" target="_blank" rel="noopener">
+    <div class="ph"><img loading="lazy" src="https://i.ebayimg.com/images/g/pSEAAeSwTGxq1~Vm/s-l500.webp" alt="">
+      <span class="cond used">Used</span>
+    </div>
+    <div class="badges"></div>
+    <div class="body">
+      <div class="nick">Tia</div>
+      <div class="price">$399.99 <small>all-in</small></div>
+      <div class="ship">Free shipping</div>
+      
+      <div class="deliv">🚚 Est. Thu, Oct 29 – Wed, Nov 4</div>
+      <div class="title">HP ZBook Fury 15 G7 FHD i7-10750H 32GB RAM 2x 512GB NVMe Win11P Quadro T1000</div>
+      <dl class="specs"><dt>Screen</dt><dd>15.6&quot;<span class="note">1920px FHD+</span></dd><dt>CPU</dt><dd>i7-10750H<span class="note">45W · fast, hot, heavy</span></dd><dt>Silicon</dt><dd>2020 · 10th gen</dd><dt>Speed</dt><dd>2.60 GHz</dd><dt>RAM</dt><dd>32GB</dd><dt>Storage</dt><dd>512GB</dd><dt>GPU</dt><dd>NVIDIA Quadro T1000 Max-Q<span class="note">discrete · 3D ok</span></dd><dt>Weight</dt><dd class="unk">—</dd></dl>
+      <div class="meta">
+        <span class="seller">100%</span>
+        <span class="loc">United States</span>
+        <span class="score">match 18</span>
+      </div>
+    </div>
+  </a>
+  </div>
+  <footer>
+    Prices/specs are the seller's claim at generation time and move (auctions especially). Read the listing before buying.<br>
+    Generated 2026-10-26 15:47 UTC · shop-ebay skill · not affiliated with eBay.
+  </footer>
+</div></body></html>
